@@ -16,11 +16,17 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.events.WebDriverEventListener;
+
+import com.qa.flipkart.utility.WebEventListener;
 
 public class BasePage {
 
 	public WebDriver driver;
 	public Properties prop;
+	public WebDriverEventListener eventListener;
+	public static EventFiringWebDriver e_driver;
 
 	public WebDriver init_driver(String browserName) {
 
@@ -54,9 +60,15 @@ public class BasePage {
 				e.printStackTrace();
 			}
 		}
+		e_driver = new EventFiringWebDriver(driver);
+		// Now create object of EventListerHandler to register it with
+		// EventFiringWebDriver
+		eventListener = new WebEventListener();
+		e_driver.register(eventListener);
+		driver = e_driver;
 
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(Integer.parseInt(prop.getProperty("pageloadtimeout")),
+		driver.manage().timeouts().implicitlyWait(Integer.parseInt(prop.getProperty("pageloadtimeout")),
 				TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		return driver;
@@ -78,9 +90,10 @@ public class BasePage {
 		return prop;
 	}
 
-	public String getScreenshot() {
+	public String getScreenshot(WebDriver driver, String testMethodName) {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir") + "/screenshots/" + System.currentTimeMillis() + ".png";
+		String path = System.getProperty("user.dir") + "/screenshots/" + testMethodName + System.currentTimeMillis()
+				+ ".png";
 		File destination = new File(path);
 		try {
 			FileUtils.copyFile(src, destination);

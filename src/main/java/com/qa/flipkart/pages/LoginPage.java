@@ -38,6 +38,6 @@ public class LoginPage extends BasePage {
 		loginTb.sendKeys(un);
 		passwordTb.sendKeys(pw);
 		loginBtn.click();
-		return new HomePage();
+		return new HomePage(driver);
 	}
 }

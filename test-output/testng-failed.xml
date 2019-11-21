@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.flipkart.tests.LoginTest">
+      <class name="com.qa.flipkart.tests.HomePageTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="loginPageTitleTest"/>
+          <include name="clickOnCartTest"/>
         </methods>
-      </class> <!-- com.qa.flipkart.tests.LoginTest -->
+      </class> <!-- com.qa.flipkart.tests.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
