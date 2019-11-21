@@ -1,49 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30986" started-at="2019-11-17T18:16:12Z" finished-at="2019-11-17T18:16:43Z">
+  <suite name="Suite" duration-ms="133112" started-at="2019-11-19T11:19:48Z" finished-at="2019-11-19T11:22:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30986" started-at="2019-11-17T18:16:12Z" finished-at="2019-11-17T18:16:43Z">
+    <test name="Test" duration-ms="133112" started-at="2019-11-19T11:19:48Z" finished-at="2019-11-19T11:22:01Z">
       <class name="com.qa.flipkart.tests.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.LoginTest@46d56d67]" name="setUp" is-config="true" duration-ms="8479" started-at="2019-11-17T23:46:12Z" finished-at="2019-11-17T23:46:21Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.LoginTest@1bce4f0a]" name="setUp" is-config="true" duration-ms="17416" started-at="2019-11-19T16:49:48Z" finished-at="2019-11-19T16:50:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.qa.flipkart.tests.LoginTest@46d56d67]" name="loginPageTitleTest" duration-ms="36" started-at="2019-11-17T23:46:21Z" finished-at="2019-11-17T23:46:21Z">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.qa.flipkart.tests.LoginTest@1bce4f0a]" name="loginPageTitleTest" duration-ms="29" started-at="2019-11-19T16:50:05Z" finished-at="2019-11-19T16:50:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.LoginTest@46d56d67]" name="tearDown" is-config="true" duration-ms="869" started-at="2019-11-17T23:46:21Z" finished-at="2019-11-17T23:46:21Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.LoginTest@1bce4f0a]" name="tearDown" is-config="true" duration-ms="1414" started-at="2019-11-19T16:50:05Z" finished-at="2019-11-19T16:50:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.LoginTest@46d56d67]" name="setUp" is-config="true" duration-ms="9014" started-at="2019-11-17T23:46:21Z" finished-at="2019-11-17T23:46:30Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.LoginTest@1bce4f0a]" name="setUp" is-config="true" duration-ms="8894" started-at="2019-11-19T16:50:20Z" finished-at="2019-11-19T16:50:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginLinkTest()[pri:2, instance:com.qa.flipkart.tests.LoginTest@46d56d67]" name="loginLinkTest" duration-ms="104" started-at="2019-11-17T23:46:30Z" finished-at="2019-11-17T23:46:31Z">
+        <test-method status="PASS" signature="loginLinkTest()[pri:2, instance:com.qa.flipkart.tests.LoginTest@1bce4f0a]" name="loginLinkTest" duration-ms="502" started-at="2019-11-19T16:50:29Z" finished-at="2019-11-19T16:50:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLinkTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.LoginTest@46d56d67]" name="tearDown" is-config="true" duration-ms="725" started-at="2019-11-17T23:46:31Z" finished-at="2019-11-17T23:46:31Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.LoginTest@1bce4f0a]" name="tearDown" is-config="true" duration-ms="840" started-at="2019-11-19T16:50:29Z" finished-at="2019-11-19T16:50:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.LoginTest@46d56d67]" name="setUp" is-config="true" duration-ms="10377" started-at="2019-11-17T23:46:31Z" finished-at="2019-11-17T23:46:42Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.LoginTest@1bce4f0a]" name="setUp" is-config="true" duration-ms="30492" started-at="2019-11-19T16:51:23Z" finished-at="2019-11-19T16:51:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLogin()[pri:3, instance:com.qa.flipkart.tests.LoginTest@46d56d67]" name="validLogin" duration-ms="564" started-at="2019-11-17T23:46:42Z" finished-at="2019-11-17T23:46:42Z">
+        <test-method status="PASS" signature="validLogin()[pri:3, instance:com.qa.flipkart.tests.LoginTest@1bce4f0a]" name="validLogin" duration-ms="6401" started-at="2019-11-19T16:51:54Z" finished-at="2019-11-19T16:52:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.LoginTest@46d56d67]" name="tearDown" is-config="true" duration-ms="783" started-at="2019-11-17T23:46:42Z" finished-at="2019-11-17T23:46:43Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.LoginTest@1bce4f0a]" name="tearDown" is-config="true" duration-ms="977" started-at="2019-11-19T16:52:00Z" finished-at="2019-11-19T16:52:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.flipkart.tests.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.qa.flipkart.tests.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@5e3a8624]" name="setUp" is-config="true" duration-ms="12172" started-at="2019-11-19T16:50:07Z" finished-at="2019-11-19T16:50:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.qa.flipkart.tests.HomePageTest@5e3a8624]" name="verifyHomePageTitleTest" duration-ms="11" started-at="2019-11-19T16:50:19Z" finished-at="2019-11-19T16:50:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.flipkart.tests.HomePageTest@5e3a8624]" name="tearDown" is-config="true" duration-ms="903" started-at="2019-11-19T16:50:19Z" finished-at="2019-11-19T16:50:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageTitleTest status=SUCCESS method=HomePageTest.verifyHomePageTitleTest()[pri:1, instance:com.qa.flipkart.tests.HomePageTest@5e3a8624] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@5e3a8624]" name="setUp" is-config="true" duration-ms="15275" started-at="2019-11-19T16:50:30Z" finished-at="2019-11-19T16:50:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickOnCartTest()[pri:2, instance:com.qa.flipkart.tests.HomePageTest@5e3a8624]" name="clickOnCartTest" duration-ms="36387" started-at="2019-11-19T16:50:45Z" finished-at="2019-11-19T16:51:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCartTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.flipkart.tests.HomePageTest@5e3a8624]" name="tearDown" is-config="true" duration-ms="1372" started-at="2019-11-19T16:51:22Z" finished-at="2019-11-19T16:51:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOnCartTest status=SUCCESS method=HomePageTest.clickOnCartTest()[pri:2, instance:com.qa.flipkart.tests.HomePageTest@5e3a8624] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.flipkart.tests.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

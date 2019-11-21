@@ -12,24 +12,22 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
-public class Utility {
+import com.qa.flipkart.base.BasePage;
+
+public class Utility extends BasePage {
+	public static WebDriver driver;
 	public static Properties prop;
 	public static final String TESTDATA_SHEET_PATH = "./test data/FlipkartTestData.xlxs";
 	public static Workbook book;
 	public static org.apache.poi.ss.usermodel.Sheet sheet;
 
-	public static void takeScreenShot(WebDriver driver, String testMethodName) {
-		TakesScreenshot t = (TakesScreenshot) driver;
-		File srcFile = t.getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir") + "/screenshots" + testMethodName + System.currentTimeMillis()
-				+ ".png";
-		File destFile = new File(path);
-		try {
-			FileUtils.copyFile(srcFile, destFile);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+	public static void takeScreenshotAtEndOfTest() throws IOException {
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String currentDir = System.getProperty("user.dir");
+		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
 	}
 
 	public static Object[][] getTestData(String sheetName) {
@@ -53,5 +51,10 @@ public class Utility {
 		}
 
 		return data;
+	}
+
+	public static void mouseHover(WebDriver driver, WebElement element) {
+		Actions action = new Actions(driver);
+		action.moveToElement(element).perform();
 	}
 }
